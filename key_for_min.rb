@@ -17,6 +17,7 @@ def smallest_value(name_hash)
     if current_number <= smallest_number
       smallest_number = current_number
     end
+    
   end
   puts smallest_number
 end

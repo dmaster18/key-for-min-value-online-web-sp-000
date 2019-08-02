@@ -23,7 +23,7 @@ def smallest_value(name_hash)
 end
 
 def key_for_min_value(name_hash)
-  name_of_key = ""
+  name_of_key = nil
   smallest_value = smallest_value(name_hash)
   name_hash.find do |key, value|
     if value == smallest_value

@@ -3,7 +3,7 @@
 
 ikea = {:table => 85, :mattress => 450, :chair => 25}
 veggies = {"carrot" => -44.9, "apple" => -45, "banana" => -44.5, "kiwi" => -85, "pineapple" => -105}
-empty_hash
+empty_hash = {}
 
 def smallest_value(name_hash)
   collection = []

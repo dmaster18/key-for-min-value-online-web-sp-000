@@ -10,7 +10,6 @@ def smallest_value(name_hash)
   name_hash.collect do |key, value|
     collection.push(value.to_f)
   end
-  puts collection
   smallest_number = collection[0].to_f
   while i < collection.length
     current_number = collection[i].to_f

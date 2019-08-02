@@ -27,7 +27,7 @@ def key_for_min_value(name_hash)
   name_hash.find do |key, value|
     if value == smallest_value
       name_of_key = key
-    else value 
+    elsif 
     end
   end
   name_of_key

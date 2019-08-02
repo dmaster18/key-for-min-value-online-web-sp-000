@@ -1,8 +1,8 @@
 # prereqs: iterators, hashes, conditional logic
 # Given a hash with numeric values, return the key for the smallest value
 
-ikea = {:table => 85, :mattress => 450, :chair => 25}
-veggies = {"carrot" => -44.9, "apple" => -45, "banana" => -44.5}
+ikea = {:chair => 25, :table => 85, :mattress => 450}
+veggies = {"apple" => -45, "banana" => -44.5, "carrot" => -44.9}
 
 def smallest_value(name_hash)
   collection = []
@@ -11,26 +11,27 @@ def smallest_value(name_hash)
     collection.push(value.to_f)
   end
   puts collection
-  smallest_number = collection[0].to_f
-  while i < collection.length
-    current_number = collection[i].to_f
-    if current_number <= smallest_number
-      smallest_number = current_number
+  until collection.length == 1 do 
+    if collection[i].to_f <= collection[i+1].to_f
+      collection.delete(collection[i+1].to_f)
+      i+=1
+    else
+      collection.delete(collection[i].to_f)
+      i+=1
     end
   end
-  puts smallest_number
+  puts collection[0].to_f
 end
 
 def key_for_min_value(name_hash)
-  name_of_key = ""
+  key =""
   smallest_value = smallest_value(name_hash)
   name_hash.find do |key, value|
     if value == smallest_value
-      name_of_key = key
+      key
     end
-    name_of_key
   end
-  name_of_key
+  key
 end
 
 smallest_value(ikea)

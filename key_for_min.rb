@@ -24,8 +24,6 @@ end
 def key_for_min_value(name_hash)
   name_of_key = ""
   smallest_value = smallest_value(name_hash)
-  i = 0 
-  while i < name_hash.length
   name_hash.find do |key, value|
     if value == smallest_value
       name_of_key = key

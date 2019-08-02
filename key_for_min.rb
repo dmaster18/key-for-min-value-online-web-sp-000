@@ -29,7 +29,7 @@ def key_for_min_value(name_hash)
       name_of_key = key
     end
   end
-  puts name_of_key
+  name_of_key
 end
 
 puts key_for_min_value(ikea)

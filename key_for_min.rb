@@ -37,3 +37,4 @@ end
 
 puts key_for_min_value(ikea)
 puts key_for_min_value(veggies)
+puts key_for_min_value(empty_hash)

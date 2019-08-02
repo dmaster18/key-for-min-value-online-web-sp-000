@@ -33,7 +33,5 @@ def key_for_min_value(name_hash)
   name_of_key
 end
 
-smallest_value(ikea)
-smallest_value(veggies)
 puts key_for_min_value(ikea)
 puts key_for_min_value(veggies)
